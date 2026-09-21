@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --clr-primary: #3e7c59;
+  --clr-text: #2e2e2e;
+  --clr-background: #fafaf4;
+
+  --clr-cyan-300: hsl(192, 90%, 77%);
+  --clr-cyan-600: hsl(192, 37%, 48%);
+  --clr-cyan-600-tr: hsl(192 37% 48% / 85%);
+  --clr-cyan-active: hsl(192.12, 53.51%, 63.73%);
+
+  /* Spacing */
+  --spacing-1400: 7rem;
+  --spacing-1000: 5rem;
+  --spacing-900: 4.5rem;
+  --spacing-800: 4rem;
+  --spacing-700: 3.5rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 0.25rem;
+
+  /* Typography */
+  --ff-sans: "Red Hat Display", sans-serif;
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.12rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-900: 4rem;
+
+  --fw-400: 400;
+  --fw-900: 900;
+
+  /* Misc */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+}

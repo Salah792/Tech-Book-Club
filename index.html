@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- page icon  -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- external fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- page title  -->
+    <title>Tech Book Club</title>
+  </head>
+  <body>
+    <header class="global-header">
+      <div class="logo">Tech book club</div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Join the ultimate tech book club</h1>
+          <p>
+            Turn your reading time into learning time with fellow tech
+            enthusiasts. Get curated recommendations, join vibrant discussions,
+            and level up your skills one chapter at a time.
+          </p>
+          <a class="cta-button">Review membership options</a>
+          <div class="reviews">
+            <div class="reviews__images"></div>
+            <div class="reviews__rating">
+              <div class="reviews__stars"></div>
+              <p>200+ developers joined already</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <picture>
+            <source
+              srcset="./assets/images/image-hero-desktop.webp"
+              media="(min-width: 87rem)"
+            />
+            <source
+              srcset="./assets/images/image-hero-tablet.webp"
+              media="(min-width: 48rem)"
+            />
+            <img
+              src="./assets/images/image-hero-mobile.webp"
+              alt="3 persons reading in the club"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features-image">
+          <picture>
+            <source
+              srcset="./assets/images/image-read-together-desktop.webp"
+              media="(min-width: 87rem)"
+            />
+            <source
+              srcset="./assets/images/image-read-together-tablet.webp"
+              media="(min-width: 48rem)"
+            />
+            <img
+              src="./assets/images/image-read-together-mobile.webp"
+              alt="3 persons reading in the club"
+            />
+          </picture>
+        </div>
+        <div class="featuresList">
+          <h2 class="featuresList__title">Read together, grow together</h2>
+          <ul class="featuresList__list">
+            <li class="featuresList__element">
+              Monthly curated tech reads selected by industry experts
+            </li>
+            <li class="featuresList__element">
+              Virtual and in-person meetups for deep-dive discussions
+            </li>
+            <li class="featuresList__element">
+              Early access to new tech book releases
+            </li>
+            <li class="featuresList__element">
+              Author Q&A sessions with tech thought leaders
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="community">
+        <div class="community-body">
+          <h2>Not your average book club</h2>
+          <p>
+            Connect with a community that speaks your language - from Python to
+            TypeScript and everything in between. Our discussions blend
+            technical depth with practical applications.
+          </p>
+        </div>
+        <div class="community-image">
+          <picture>
+            <source
+              srcset="./assets/images/image-not-average-desktop.webp"
+              media="(min-width: 87rem)"
+            />
+            <source
+              srcset="./assets/images/image-not-average-tablet.webp"
+              media="(min-width: 48rem)"
+            />
+            <img
+              src="./assets/images/image-not-average-mobile.webp"
+              alt="3 persons reading and discussing ideas"
+            />
+          </picture>
+        </div>
+        <div class="technologies">
+          <img
+            src="./assets/images/logos-tech.svg"
+            alt="Logos of -not exclusively- technologies we read about: typescript, github, react."
+          />
+        </div>
+      </section>
+      <section class="your-journey">
+        <h2>Your tech reading journey</h2>
+        <ul class="steps">
+          <li>
+            <div class="steps__number">1</div>
+            <div class="steps__step">Choose your membership tier</div>
+          </li>
+          <li>
+            <div class="steps__number">2</div>
+            <div class="steps__step">Get your monthly book selection</div>
+          </li>
+          <li>
+            <div class="steps__number">3</div>
+            <div class="steps__step">Join our discussion forums</div>
+          </li>
+          <li>
+            <div class="steps__number">4</div>
+            <div class="steps__step">Attend exclusive meetups</div>
+          </li>
+        </ul>
+      </section>
+      <section class="membership-options">
+        <h2>Membership options</h2>
+        <div class="cards">
+          <div class="card">
+            <h3 class="card__title">Starter</h3>
+            <div class="card__price">$19/month</div>
+            <div class="card__separator"></div>
+            <div class="card__options">
+              <ul>
+                <li>1 book/month</li>
+                <li>Online forums</li>
+              </ul>
+            </div>
+            <a href="" class="card__subscribeBtn"> Subscribe now </a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Pro</h3>
+            <div class="card__price">$29/month</div>
+            <div class="card__separator"></div>
+            <div class="card__options">
+              <ul>
+                <li>2 books/month</li>
+                <li>Virtual meetups</li>
+              </ul>
+            </div>
+            <a href="" class="card__subscribeBtn">Subscribe now</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Enterprise</h3>
+            <div class="card__price">Custom</div>
+            <div class="card__separator"></div>
+            <div class="card__options">
+              <ul>
+                <li>Team access</li>
+                <li>Private sessions</li>
+              </ul>
+            </div>
+            <a href="" class="card__subscribeBtn">Talk to us</a>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonial__rating"></div>
+        <figure>
+          <blockquote class="testimonial__text">
+            <p>
+              "This book club transformed my technical reading from a solitary
+              activity into an enriching community experience. The discussions
+              are gold!"
+            </p>
+          </blockquote>
+          <figcaption class="testimonial__author">
+            — <span class="author-name">Sarah Chen</span>,
+            <cite>Software Architect</cite>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <h2>Ready to debug your reading list?</h2>
+      <a class="cta-button">Review membership options</a>
+      <div class="reviews">
+        <div class="reviews__images"></div>
+        <div class="reviews__rating">
+          <div class="reviews__stars"></div>
+          <p>200+ developers joined already</p>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <p class="copy-rights">© 2024 - Tech Book Club</p>
+        <div class="social-links">
+          <a href="https://bsky.app/">
+            <img
+              src="./assets/images/logo-bluesky.svg"
+              alt="our page on bluesky app"
+          /></a>
+
+          <a href="https://www.linkedin.com/">
+            <img
+              src="./assets/images/logo-linkedin.svg"
+              alt="our page on linked in "
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

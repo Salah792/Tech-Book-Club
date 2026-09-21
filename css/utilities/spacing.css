@@ -1,0 +1,41 @@
+.m-0 {
+  margin: 0;
+}
+.m-1 {
+  margin: var(--spacing-200);
+}
+.m-2 {
+  margin: var(--spacing-400);
+}
+
+.mt-1 {
+  margin-block-start: var(--spacing-200);
+}
+.mt-2 {
+  margin-block-start: var(--spacing-400);
+}
+
+.p-1 {
+  padding: var(--spacing-200);
+}
+.p-2 {
+  padding: var(--spacing-400);
+}
+
+.px-1 {
+  padding-inline: var(--spacing-200);
+}
+.py-1 {
+  padding-block: var(--spacing-200);
+}
+.flow-content--sm > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1.5rem);
+}
+
+.flow-content--large > * + * {
+  margin-top: var(--flow-space, 4rem);
+}
