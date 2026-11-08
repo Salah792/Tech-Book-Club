@@ -363,3 +363,92 @@ footer .separator {
     justify-content: space-between;
   }
 }
+/* Desktop  */
+
+@media (min-width: 75rem) {
+  .hero-container {
+    flex-direction: row;
+    gap: var(--spacing-800);
+  }
+  .features {
+    flex-direction: row;
+    gap: var(--spacing-1000);
+  }
+  .features-image {
+    order: 0;
+    flex: 0 0 50%;
+  }
+  .featuresList {
+    align-self: center;
+  }
+  .community {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+  }
+  .community-image {
+    flex: 0 0 48%;
+  }
+  .technologies {
+    display: block;
+    position: absolute;
+    bottom: 6%;
+  }
+  .your-journey h2 {
+    max-width: 22rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+  .steps {
+    flex-direction: row;
+    margin-block-start: var(--spacing-800);
+    margin-inline: var(--spacing-800);
+    gap: var(--spacing-600);
+  }
+  .steps > * {
+    margin-block-start: 0;
+  }
+  .steps li {
+    position: relative;
+  }
+  .steps li img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .your-journey {
+    background-image:
+      url("/assets/images/pattern-glow.svg"),
+      url("/assets/images/pattern-light-bg.svg");
+    background-position:
+      right -400% bottom 90%,
+      center;
+  }
+  .your-journey li img {
+    display: block;
+  }
+
+  .membership-options h2 {
+    text-align: center;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    padding-inline: 6.25rem;
+  }
+  .card__pro {
+    height: 105%;
+  }
+  .testimonials {
+    align-items: center;
+  }
+  .testimonials figure {
+    text-align: center;
+    padding-inline: 6.25rem;
+  }
+}
