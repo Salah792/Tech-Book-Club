@@ -25,51 +25,92 @@
     <title>Tech Book Club</title>
   </head>
   <body>
-    <header class="global-header">
-      <div class="logo">Tech book club</div>
+    <header class="global-header container mt-2 mb-4">
+      <div class="logo">
+        <picture>
+          <img
+            src="./assets/images/logo.svg"
+            alt="The logo of our website: Tech Book Club"
+          />
+        </picture>
+      </div>
     </header>
-    <main>
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>Join the ultimate tech book club</h1>
-          <p>
-            Turn your reading time into learning time with fellow tech
-            enthusiasts. Get curated recommendations, join vibrant discussions,
-            and level up your skills one chapter at a time.
-          </p>
-          <a class="cta-button">Review membership options</a>
-          <div class="reviews">
-            <div class="reviews__images"></div>
-            <div class="reviews__rating">
-              <div class="reviews__stars"></div>
-              <p>200+ developers joined already</p>
+    <main class="flow-content--large">
+      <section class="hero-section container-margin">
+        <div
+          class="hero-container container flow-content--large flex flex-column items-center justify-center"
+        >
+          <div class="hero-content flow-content">
+            <h1>Join the ultimate tech book club</h1>
+            <p>
+              Turn your reading time into learning time with fellow tech
+              enthusiasts. Get curated recommendations, join vibrant
+              discussions, and level up your skills one chapter at a time.
+            </p>
+            <a class="cta-button flex flex-row">
+              <span>Review membership options</span>
+              <img
+                src="./assets/images/icon-arrow-down.svg"
+                alt="arrow down icon"
+            /></a>
+            <div class="reviews flex flex-row items-center">
+              <div class="reviews__images">
+                <img
+                  src="./assets/images/image-avatars.webp"
+                  alt="avatars of three profiles"
+                />
+              </div>
+              <div class="reviews__rating flex flex-column">
+                <div class="reviews__stars flex flex-row">
+                  <img
+                    src="./assets/images/icon-star.svg"
+                    alt="review star icon"
+                  /><img
+                    src="./assets/images/icon-star.svg"
+                    alt="review star icon"
+                  /><img
+                    src="./assets/images/icon-star.svg"
+                    alt="review star icon"
+                  /><img
+                    src="./assets/images/icon-star.svg"
+                    alt="review star icon"
+                  /><img
+                    src="./assets/images/icon-star.svg"
+                    alt="review star icon"
+                  />
+                </div>
+                <p>200+ developers joined already</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="hero-image">
-          <picture>
-            <source
-              srcset="./assets/images/image-hero-desktop.webp"
-              media="(min-width: 87rem)"
-            />
-            <source
-              srcset="./assets/images/image-hero-tablet.webp"
-              media="(min-width: 48rem)"
-            />
-            <img
-              src="./assets/images/image-hero-mobile.webp"
-              alt="3 persons reading in the club"
-            />
-          </picture>
+          <div class="hero-image">
+            <picture>
+              <source
+                srcset="./assets/images/image-hero-desktop.webp"
+                media="(min-width: 75rem)"
+              />
+              <source
+                srcset="./assets/images/image-hero-tablet.webp"
+                media="(min-width: 48rem)"
+              />
+              <img
+                src="./assets/images/image-hero-mobile.webp"
+                alt="3 persons reading in the club"
+              />
+            </picture>
+          </div>
         </div>
       </section>
-      <section class="features">
+
+      <section
+        class="features container flex flex-column items-center justify-center"
+      >
         <div class="features-image">
           <picture>
             <source
               srcset="./assets/images/image-read-together-desktop.webp"
-              media="(min-width: 87rem)"
+              media="(min-width: 75rem)"
             />
             <source
               srcset="./assets/images/image-read-together-tablet.webp"
@@ -81,9 +122,9 @@
             />
           </picture>
         </div>
-        <div class="featuresList">
+        <div class="featuresList flow-content">
           <h2 class="featuresList__title">Read together, grow together</h2>
-          <ul class="featuresList__list">
+          <ul class="featuresList__list flow-content--sm">
             <li class="featuresList__element">
               Monthly curated tech reads selected by industry experts
             </li>
@@ -99,20 +140,24 @@
           </ul>
         </div>
       </section>
-      <section class="community">
-        <div class="community-body">
-          <h2>Not your average book club</h2>
+      <section class="community container flow-content--sl flex flex-column">
+        <div class="community-body flow-content">
+          <h2>
+            Not your average book
+            <span class="circled-word">club </span>
+          </h2>
           <p>
-            Connect with a community that speaks your language - from Python to
-            TypeScript and everything in between. Our discussions blend
-            technical depth with practical applications.
+            Connect with a community that speaks your language - from
+            <span>Python</span> to <span>TypeScript</span> and everything in
+            between. Our discussions blend technical depth with practical
+            applications.
           </p>
         </div>
         <div class="community-image">
           <picture>
             <source
               srcset="./assets/images/image-not-average-desktop.webp"
-              media="(min-width: 87rem)"
+              media="(min-width: 75rem)"
             />
             <source
               srcset="./assets/images/image-not-average-tablet.webp"
@@ -131,71 +176,115 @@
           />
         </div>
       </section>
-      <section class="your-journey">
-        <h2>Your tech reading journey</h2>
-        <ul class="steps">
-          <li>
-            <div class="steps__number">1</div>
-            <div class="steps__step">Choose your membership tier</div>
-          </li>
-          <li>
-            <div class="steps__number">2</div>
-            <div class="steps__step">Get your monthly book selection</div>
-          </li>
-          <li>
-            <div class="steps__number">3</div>
-            <div class="steps__step">Join our discussion forums</div>
-          </li>
-          <li>
-            <div class="steps__number">4</div>
-            <div class="steps__step">Attend exclusive meetups</div>
-          </li>
-        </ul>
+      <section class="your-journey container-margin container flow-content--2">
+        <div class="">
+          <h2>Your tech reading journey</h2>
+          <ol class="steps flow-content flex flex-column">
+            <li>
+              <img
+                src="./assets/images/pattern-arrow.svg"
+                alt="step-to-step arrow"
+              />
+              <div class="steps__step">Choose your membership tier</div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/pattern-arrow.svg"
+                alt="step-to-step arrow"
+              />
+              <div class="steps__step">Get your monthly book selection</div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/pattern-arrow.svg"
+                alt="step-to-step arrow"
+              />
+              <div class="steps__step">Join our discussion forums</div>
+            </li>
+            <li>
+              <div class="steps__step">Attend exclusive meetups</div>
+            </li>
+          </ol>
+        </div>
       </section>
-      <section class="membership-options">
+      <section class="membership-options container flow-content">
         <h2>Membership options</h2>
-        <div class="cards">
-          <div class="card">
+        <div class="cards grid container-padding">
+          <div class="card flow-content">
             <h3 class="card__title">Starter</h3>
-            <div class="card__price">$19/month</div>
+            <div class="card__price"><span>$19</span>/month</div>
             <div class="card__separator"></div>
             <div class="card__options">
-              <ul>
+              <ul class="flow-content--sm">
                 <li>1 book/month</li>
                 <li>Online forums</li>
               </ul>
             </div>
-            <a href="" class="card__subscribeBtn"> Subscribe now </a>
+            <a
+              href=""
+              class="card__subscribeBtn flex items-center justify-center"
+            >
+              Subscribe now
+            </a>
           </div>
-          <div class="card">
+          <div class="card flow-content card__pro">
             <h3 class="card__title">Pro</h3>
-            <div class="card__price">$29/month</div>
+            <div class="card__price"><span>$29</span>/month</div>
             <div class="card__separator"></div>
             <div class="card__options">
-              <ul>
+              <ul class="flow-content--sm">
                 <li>2 books/month</li>
                 <li>Virtual meetups</li>
               </ul>
             </div>
-            <a href="" class="card__subscribeBtn">Subscribe now</a>
+            <a
+              href=""
+              class="card__subscribeBtn flex items-center justify-center"
+              >Subscribe now</a
+            >
           </div>
-          <div class="card">
+          <div class="card flow-content">
             <h3 class="card__title">Enterprise</h3>
             <div class="card__price">Custom</div>
             <div class="card__separator"></div>
             <div class="card__options">
-              <ul>
+              <ul class="flow-content--sm">
                 <li>Team access</li>
                 <li>Private sessions</li>
               </ul>
             </div>
-            <a href="" class="card__subscribeBtn">Talk to us</a>
+            <a
+              href=""
+              class="card__subscribeBtn flex items-center justify-center"
+              >Talk to us</a
+            >
           </div>
         </div>
       </section>
-      <section class="testimonials">
-        <div class="testimonial__rating"></div>
-        <figure>
+      <section class="testimonials container flow-content--2 flex flex-column">
+        <div class="testimonial__rating">
+          <div class="reviews__rating flex flex-column">
+            <div class="reviews__stars flex flex-row">
+              <img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              />
+            </div>
+          </div>
+        </div>
+        <figure class="flow-content--2 container-padding">
           <blockquote class="testimonial__text">
             <p>
               "This book club transformed my technical reading from a solitary
@@ -204,25 +293,55 @@
             </p>
           </blockquote>
           <figcaption class="testimonial__author">
-            — <span class="author-name">Sarah Chen</span>,
+            <span class="author-name">Sarah Chen</span>,
             <cite>Software Architect</cite>
           </figcaption>
         </figure>
       </section>
     </main>
-    <footer>
-      <h2>Ready to debug your reading list?</h2>
-      <a class="cta-button">Review membership options</a>
-      <div class="reviews">
-        <div class="reviews__images"></div>
-        <div class="reviews__rating">
-          <div class="reviews__stars"></div>
-          <p>200+ developers joined already</p>
+    <footer class="container-margin">
+      <div class="foot-main">
+        <h2>Ready to debug your reading list?</h2>
+        <a class="cta-button review-options-button flex flex-row">
+          <span> Review membership options </span>
+          <img src="./assets/images/icon-arrow-up.svg" alt="arrow up icon"
+        /></a>
+        <div class="reviews footer-reviews flex flex-row items-center">
+          <div class="reviews__images">
+            <img
+              src="./assets/images/image-avatars.webp"
+              alt="avatars of three profiles"
+            />
+          </div>
+          <div class="reviews__rating flex flex-column">
+            <div class="reviews__stars flex flex-row">
+              <img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              /><img
+                src="./assets/images/icon-star.svg"
+                alt="review star icon"
+              />
+            </div>
+            <p>200+ developers joined already</p>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom-bar">
+      <div class="separator container"></div>
+      <div
+        class="footer-bottom-bar container flex flex-column items-center justify-center"
+      >
         <p class="copy-rights">© 2024 - Tech Book Club</p>
-        <div class="social-links">
+        <div class="social-links flex flex-row items-center justify-center">
           <a href="https://bsky.app/">
             <img
               src="./assets/images/logo-bluesky.svg"

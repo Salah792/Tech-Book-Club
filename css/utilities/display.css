@@ -1,3 +1,13 @@
+.container {
+  max-width: min(90vw, 75rem);
+  margin-inline: auto;
+}
+.container-margin {
+  padding-inline: var(--spacing-200);
+}
+.container-padding {
+  padding-inline: 6.25rem;
+}
 .hidden {
   display: none;
 }
