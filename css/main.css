@@ -341,3 +341,25 @@ footer .separator {
 .social-links {
   gap: var(--spacing-300);
 }
+/* Media queries  */
+
+/* Tbalet  */
+
+@media (min-width: 48rem) {
+  .cta-button {
+    max-width: 24rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foot-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-bottom-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
