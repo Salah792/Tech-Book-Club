@@ -44,10 +44,11 @@ p {
   font-weight: var(--fw-400);
 }
 a {
-  font-family: var(--ff-monof);
+  font-family: var(--ff-mono);
   font-weight: var(--fw-600);
   font-size: var(--fs-200);
   text-transform: uppercase;
+  text-decoration: none;
   display: block;
   /* padding: 1.25rem 1.5rem; */
   border-radius: var(--radius-8);
@@ -124,6 +125,8 @@ h1 {
   color: transparent;
 }
 .cta-button {
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-600);
   border: 2px solid var(--clr-neutral-900);
   padding: 1.25rem 1.5rem;
   gap: 1rem;
@@ -318,6 +321,7 @@ footer h2 {
   text-align: center;
 }
 .review-options-button {
+  color: var(--clr-neutral-100);
   border: 2px solid var(--clr-neutral-000);
   margin-block-start: var(--spacing-500);
 }
@@ -366,6 +370,34 @@ footer .separator {
 /* Desktop  */
 
 @media (min-width: 75rem) {
+  /* utility classes */
+
+  .cta-button:hover,
+  .cta-button:focus,
+  .card__subscribeBtn:hover,
+  .card__subscribeBtn:focus {
+    background: var(--main-gradiant);
+    cursor: pointer;
+    outline: 2 px solid var(--clr-neutral-700);
+    outline-offset: 2px;
+  }
+  .review-options-button:hover,
+  .review-options-button:focus {
+    background: linear-gradient(
+      90deg,
+      var(--clr-neutral-700) 0%,
+      var(--clr-neutral-900) 100%
+    );
+  }
+  .cta-button:focus,
+  .card__subscribeBtn:focus {
+    outline: 2px solid var(--clr-neutral-700);
+    outline-offset: 2px;
+  }
+  .review-options-button:focus {
+    outline: 2px solid var(--clr-light-salmon-50);
+  }
+  /* sections */
   .hero-container {
     flex-direction: row;
     gap: var(--spacing-800);
